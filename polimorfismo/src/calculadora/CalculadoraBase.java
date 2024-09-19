@@ -1,25 +1,54 @@
 package calculadora;
 
 public class CalculadoraBase {
-	/**
-	 * Está classe é uma super ckasse 
-	 * Será utlizada como base para estudo de polimorfismo.  
-	 * 
-	 * */ 
-	
-	
-	// Sobrecarga de método para somar dois inteiros
-	public int somar(int a, int b) {
-		return a + b; 
-	}
-	
-	//Sobrecarga de método para somar três inteiros. 
-	public int somar(int a, int b, int c) {
-		return a + b + c; 
-	}
-	
-	//Sobrercarga de método para somar dois números flutuantes
-	public double somar(double a, double b) {
-		return a + b; 
+	// Método para adição que retorna int
+    public int adicionar(int a, int b) {
+        return a + b;
+    }
+
+    // Método para adição que retorna double
+    public double adicionar(double a, double b) {
+        return a + b;
+    }
+
+    // Método para subtração que retorna int
+    public int subtrair(int a, int b) {
+        return a - b;
+    }
+
+    // Método para subtração que retorna double
+    public double subtrair(double a, double b) {
+        return a - b;
+    }
+
+    // Método para multiplicação que retorna int
+    public int multiplicar(int a, int b) {
+        return a * b;
+    }
+
+    // Método para multiplicação que retorna double
+    public double multiplicar(double a, double b) {
+        return a * b;
+    }
+
+    // Método para divisão que retorna int
+    public int dividir(int a, int b) {
+        if (b == 0) {
+            throw new ArithmeticException("Divisão por zero não é permitida.");
+        }
+        return a / b;
+    }
+
+    // Método para divisão que retorna double
+    public double dividir(double a, double b) {
+        if (b == 0) {
+            throw new ArithmeticException("Divisão por zero não é permitida.");
+        }
+        return a / b;
+    }
+
+	public char[] somar(int i, int j) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }
